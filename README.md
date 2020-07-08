@@ -1,11 +1,11 @@
 # COVID 19 India data search engine
 
-It's an implementation of Apache Solr based search engine API indexing daily covid-19 data related to Indian states/UT
+An implementation of Apache Solr based search engine API indexing daily covid-19  related data of all Indian states/UT. It bootstraps latest collection of data from https://api.covid19india.org/ endpoints
 
 Commands to run:
 
-docker build -t covid19-search:india .
+docker run --name covid19-search -d -p 8983:8983 feast0101/covid19-search:india
 
-docker run --name covid_search -d -p 8983:8983 covid19-search:india
+To index/refresh latest data:
 
-docker exec -it --user=solr covid_search ./entrypoint.sh
+docker exec -it --user=solr covid19-search update
