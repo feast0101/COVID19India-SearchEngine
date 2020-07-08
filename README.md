@@ -9,3 +9,5 @@ docker run --name covid19-search -d -p 8983:8983 feast0101/covid19-search:india
 To index/refresh latest data:
 
 docker exec -it --user=solr covid19-search update
+
+![Dashboard](https://github.com/feast0101/COVID19India-SearchEngine/blob/master/screenshot.png)
