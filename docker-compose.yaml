@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  covid-search:
+    image: covid19-search:india
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8983:8983"
+    volumes:
+     - data:/var/
+        
+volumes:
+    data:
