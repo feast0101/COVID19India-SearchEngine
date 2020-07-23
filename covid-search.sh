@@ -27,7 +27,11 @@ else
   /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data5.json
   /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data6.json
   /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data7.json
-  /opt/solr/bin/post -c $CORE -commit yes /covid_data/raw_data8.json
+  /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data8.json
+  /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data9.json
+  /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data10.json
+  /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data11.json
+  /opt/solr/bin/post -c $CORE -commit yes /covid_data/raw_data12.json
   echo "Loaded covid-19 data"
   stop-local-solr
 
