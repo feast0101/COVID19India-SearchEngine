@@ -5,7 +5,13 @@ MAINTAINER Kallol Das<kallolds@gmail.com>
 USER root
 
 RUN apt-get update &&  apt-get install -y \
-jq
+jq \
+wget \
+&& rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /opt/cprof && \
+    wget -q -O- https://storage.googleapis.com/cloud-profiler/java/latest/profiler_java_agent.tar.gz \
+    | tar xzv -C /opt/cprof
 
 RUN mkdir -p /covid_data
 
