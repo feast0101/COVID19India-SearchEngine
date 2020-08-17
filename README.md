@@ -27,7 +27,7 @@ Use Case 2: Zero maintenance effort required, as we can automate daily index/upd
 Use Case 3: Enrich response data set by combining multiple Solr collections containing various data sets. Custom request handler is another option in this regard.
 
 High Level DFD:
-https://user-images.githubusercontent.com/6492003/87252420-87bf0900-c490-11ea-8f0d-f12874f5b5e4.png
+![DFD](https://github.com/feast0101/COVID19India-SearchEngine/blob/master/use_case.png)
 
 For demo purpose, I have deployed the search engine on Google Cloud :
 
