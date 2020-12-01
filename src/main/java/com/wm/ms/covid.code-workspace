@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "/Users/Kallol_Das/Documents/covid19india-cluster/solr-ms/ms"
+		},
+		{
+			"path": "/Users/Kallol_Das/Documents/knewtron/wittymonk"
+		},
+		{
+			"path": "/Users/Kallol_Das/Documents/DevOps/covid_data"
+		},
+		{
+			"path": "/Users/Kallol_Das/Documents/DevOps/covid-search-ui"
+		},
+		{
+			"path": "/Users/Kallol_Das/Documents/DevOps/react-workshop-live-search-react"
+		},
+		{
+			"path": "/Users/Kallol_Das/Documents/DevOps/react-solr-connector-master"
+		},
+		{
+			"path": "/Users/Kallol_Das/Documents/DevOps/okta-angular-deployment-example"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
