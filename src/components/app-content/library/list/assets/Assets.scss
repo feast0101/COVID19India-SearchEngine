@@ -1,0 +1,140 @@
+@import '../../../../../styles/partials/variables';
+.assetsTable{
+    width:100%;
+    margin-top: 10px;
+    background-color: $white;
+    
+    th{
+        @include font-line-height(14px, 500, $light-black, 21px, TheinhardtPan Medium);
+        text-align: left;
+        height: 21px;
+        border-bottom: 1px solid $medium-grey;
+        padding: 0 20px 10px 0;
+    }
+    td{
+        border-bottom: 1px solid $medium-grey;
+        vertical-align: top;
+        width: 30%;
+        padding: 15px 12px 15px 0px;
+        &.name {
+            width: 24%;
+            .title{
+                display: block;
+                @include font-line-height(16px, 500, $vivid-navy, 22px, TheinhardtPan Light);
+                margin-bottom: 2px;
+                &:hover{
+                    color: $vivid-navy;
+                    text-decoration: underline !important;
+                    //cursor: pointer;
+                }
+            }
+            .smallAssetTitle{
+                display: block;
+                @include font-line-height(16px, 500, $black, 22px, TheinhardtPan Light);
+                margin-bottom: 2px;
+            }
+            .owned{
+                display: block;
+                @include font-line-height(12px, 300, $black, 16px, TheinhardtPan Light);
+                span:not(.ownedByLabel){
+                    cursor: pointer;
+                    font-family: TheinhardtPan Light;
+                    &:hover{
+                        color: $vivid-navy;
+                        text-decoration: underline;
+                        //cursor: pointer;
+                    }
+                }
+                
+            }
+            .ownedByLabel{
+                color: $grey70;
+                font-family: TheinhardtPan Light;
+            }
+           
+        }
+        &.description{
+            width: 44%;
+            @include font-line-height(14px, 300, $light-black, 19px, TheinhardtPan Regular);
+        }
+        &.groupEmail{
+            width: 1%;
+            vertical-align: middle;
+           
+            &:hover{
+                img{
+                    filter: invert(30%) sepia(83%) saturate(7342%) hue-rotate(233deg) brightness(91%) contrast(99%);
+                }
+               
+            }
+        }
+        &.firstAlert{
+            width:18%;
+            div{
+            &:hover{
+                .profiles.photo > .circular > img{
+                    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
+                    filter: alpha(opacity=70); // IE 5-7
+                    opacity: 0.7; //modern browsers
+                }
+            }
+            }
+            .none{
+                @include font-line-height(14px, 300, $grey60, inherit, TheinhardtPan Light);
+            }
+            .profiles{
+                display: inline-block;
+                color: $light-black;
+                &.photo{
+                    width: 20%;
+                    margin-right: 12px;
+                    &:hover{
+                        + .name > .first-alert-name > span{
+                            color: $vivid-navy;
+                        }
+                    }
+                }
+                &.name{
+                    max-width: 68%;
+                }
+            
+                .circular{
+                    display: inline-block;
+                    margin: auto;
+                    width: 40px;
+                    height: 40px;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    overflow:hidden;
+                    
+                    vertical-align: middle;
+                    img{
+                        width:100%;
+                       
+                    }
+                }
+               
+                .first-alert-name{
+                    display: inline-block;
+                    width: 100%;
+                    vertical-align: middle;
+                    span{
+                        @include font-line-height(14px, 300, $light-black, inherit, TheinhardtPan Light);
+                        &:hover {
+                            color: $vivid-navy;
+                            text-decoration: underline;
+                        
+                        }
+                    }
+                    
+                }
+                
+                
+            }
+            a.profiles:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

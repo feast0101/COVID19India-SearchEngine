@@ -1,0 +1,17 @@
+@import '../../../../styles/partials/variables';
+.libraryList{
+    //height: 50%;
+    padding: 15px 24px;
+    background-color: $white;
+    min-height: 150px;
+    max-width: 1280px;
+    margin: 0 auto;
+    .want-to-be-first-alert{
+        float:right;
+        @include font-line-height(12px, 300, $vivid-navy, 16px, TheinhardtPan Regular);
+    }
+    .assetCount{
+        @include font-line-height(24px, 500, $mckinsey-deep-blue, 33px, TheinhardtPan Medium);
+        //width: 119px;
+    }
+}

@@ -1,0 +1,98 @@
+@import '../../../styles/partials/variables';
+
+ul.pagination {
+  align-items: center;
+  border: 1px solid $medium-grey;
+  border-radius: 0;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+  background: #ffffff;
+
+  li {
+
+    &:first-child, &:last-child {
+      position: absolute;
+      display: flex;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.disabled:hover {
+        background-color: transparent;
+        cursor: default;
+      }
+    }
+
+    &:first-child {
+      border-right: 1px solid $medium-grey;
+      left: 0;
+
+      a {
+        height: 30px;
+        margin: 17px;
+      }
+    }
+
+    &:last-child {
+      border-left: 1px solid $medium-grey;
+      right: 0;
+
+      a {
+        height: 30px;
+        margin: 17px;
+      }
+    }
+
+    a {
+      background-color: transparent;
+      border: 0;
+      color: $black;
+      font-size: 18px;
+      height: 24px;
+      margin: 14px;
+      padding: 0;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &.activePage, &.activePage:hover, &.activePage:focus {
+        background-color: transparent;
+        border-bottom: 4px solid #405f88;
+        color: #405f88;
+        margin: 20px 14px 0;
+        padding: 0 3px 16px;
+      }
+    }
+  }
+
+  .pagination-arrow-prev {
+    background: url('./../../../assets/images/icon-arrow-left.svg') no-repeat;
+    height: 20px;
+    width: 24px;
+  }
+
+  .pagination-arrow-next {
+    background: url('./../../../assets/images/icon-arrow-right.svg') no-repeat;
+    height: 20px;
+    width: 24px;
+  }
+
+  li.disabled {
+    .pagination-arrow-prev {
+      background: url('./../../../assets/images/icon-arrow-left-disabled.svg') no-repeat;
+    }
+
+    .pagination-arrow-next {
+      background: url('./../../../assets/images/icon-arrow-right-disabled.svg') no-repeat;
+    }
+  }
+}
+
+.pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+  cursor: default;
+}

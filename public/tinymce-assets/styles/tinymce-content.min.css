@@ -1,0 +1,12 @@
+body{
+  font-family: 'TheinhardtPan Light';
+}
+@font-face {
+    font-family: 'TheinhardtPan Light';
+    src: url('/ksassetfe/fonts/TheinhardtPan-Light.eot');
+    src: url('/ksassetfe/fonts/TheinhardtPan-Light.eot?#iefix') format('embedded-opentype'),
+        url('/ksassetfe/fonts/TheinhardtPan-Light.woff2') format('woff2'),
+        url('/ksassetfe/fonts/TheinhardtPan-Light.woff') format('woff'),
+        url('/ksassetfe/fonts/TheinhardtPanTT-Light.ttf') format('truetype'),
+        url('/ksassetfe/fonts/TheinhardtPan-Light.otf') format('opentype')
+}

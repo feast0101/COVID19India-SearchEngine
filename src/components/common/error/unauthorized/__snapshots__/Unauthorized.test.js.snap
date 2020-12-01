@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unauthorized runs snapshot test 1`] = `
+<div
+  className="error-page"
+>
+  <h3>
+    You are unauthorized to access this application.
+  </h3>
+</div>
+`;

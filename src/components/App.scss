@@ -1,0 +1,23 @@
+@import './../styles/partials/variables';
+@import './../styles/partials/reset';
+@import './../styles/partials/fonts';
+.App {
+  text-align: center;
+}
+.error-banner {
+  @include font-line-height(14px, normal, $white, 36px, TheinhardtPan Regular);
+  width: 100%;
+  background-color: $red;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, 0.12);
+  //position: fixed;
+  text-align: center;
+  z-index: 2000;
+  position: relative;
+  
+  .alert {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+}

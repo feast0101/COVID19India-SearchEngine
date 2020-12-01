@@ -1,0 +1,176 @@
+@import './../../../../../styles/partials/variables';
+
+.react-dropdown-tree-select.filter{
+    width: 25%;
+    float: left;
+    margin-right: 12px;
+    &.growthPlatform{
+      width: 36%;
+      .dropdown-trigger.arrow{
+        &.bottom{
+          background-position: 92% 52%;
+        }
+      }
+      
+    }
+    &.clicked {
+      &.growthPlatform{
+        .dropdown-trigger.arrow{
+          &.top{
+            background-position: 92% 52%;
+          }
+        }
+      }
+      .dropdown{
+        
+        .dropdown-trigger{
+          &.arrow{
+            background: $vivid-navy;
+            color: $white;
+            border: 1px solid $vivid-navy;
+            background-image: url('./../../../../../assets/images/Icon_ArrowUpWhite.svg');
+            background-position: 90% 52%;
+            background-repeat: no-repeat;
+            &:hover{
+              background-color: $vivid-navy;
+            }
+          }
+          
+       }
+        
+      }
+    }
+    .dropdown{
+        display: block;
+        .dropdown-trigger{
+          color: inherit;
+          display: inherit;
+          padding: 0px;
+          overflow: inherit;
+          border: none;
+          padding: 9px 18px;
+          border: 1px solid $black;
+          background: url('./../../../../../assets/images/Icon_ArrowDown.svg') no-repeat;
+          background-position: 90% 52%;
+          &:hover{
+            background: url('./../../../../../assets/images/Icon_ArrowDownWhite.svg') no-repeat;
+            background-position: 90% 52%;
+          }
+          &.arrow{
+            &.disabled {
+              cursor: not-allowed;
+              background-color: $grey94;
+              -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; // IE8
+              filter: alpha(opacity=20);
+              opacity: 0.2;
+              &:hover{
+                background-color: $grey94;
+                color: $black;
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; // IE8
+                filter: alpha(opacity=20);
+                opacity: 0.2;
+                cursor: inherit;
+                background-image: url('./../../../../../assets/images/Icon_ArrowDown.svg');
+                background-repeat: no-repeat;
+                box-shadow: none;
+              }
+            }
+            &:hover{
+              background-color: $black;
+              color: $white;
+              box-shadow: 0 2px 30px 0 rgba(0,0,0,0.4);
+            }
+            &.bottom {
+              &:after {
+                content: "";
+                vertical-align: inherit;
+                color: $white;
+                margin-right: 0px;
+              }
+            }
+            &.top {
+              &:after {
+                content: "";
+                vertical-align: inherit;
+                color: $white;
+                margin-right: 0px;
+                
+              }
+            }
+        }
+          
+        }
+        .dropdown-content{
+          padding: 15px 10px 15px 20px;
+          overflow-y: auto;
+          max-height: 200px;
+          z-index: 3000;
+          box-shadow: 0 2px 42px 12px rgba(0,0,0,0.07);
+          .toggle{
+            margin-left: 0px;
+            &.expanded:after{
+              content: "";
+            }
+          }
+          
+          .node{
+            padding: 10px 4px;
+            &.checked, &:hover {
+              text-decoration: underline;
+              color: $vivid-navy;
+              .node-label{
+                color: $vivid-navy;
+              }
+            }
+            .radio-item, input[type="checkbox"], input[type="radio"]{
+              display: none;
+            }
+          }
+        
+          .node-label{
+            @include font-line-height(16px, normal, $black, 18px, TheinhardtPan Regular);
+          }
+        }
+    }
+    .tag-item{
+      margin: 0px;
+      .tag{
+        background-color: inherit;
+        border: none;
+        border-radius: 0px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 82%;
+        vertical-align: middle;
+        
+        @include font-line-height(14px, 500, $white, normal, TheinhardtPan Regular);
+        .tag-remove{
+          color: rgba(31, 64, 230, 0.1);
+          cursor: pointer;
+          border: none;
+          outline: none;
+          position: absolute;
+          top: 15px;
+          right: 6px;
+          font-family: TheinhardtPan Light;
+          background: url('./../../../../../assets/images/Icon_Close.svg') no-repeat;
+          padding: 10px;
+        }
+    
+      }
+    }
+    .tag-item:not(:last-child){
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      left: 0px;
+      background-color: $vivid-navy;
+      padding: 10px 18px;
+    }
+    .tag-item:last-child{
+      @include font-line-height(14px, 500, inherit, normal, TheinhardtPan Medium);
+    }
+}
+

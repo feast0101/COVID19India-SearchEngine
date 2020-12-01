@@ -1,0 +1,17 @@
+@import "../../../../styles/partials/variables";
+
+.error-page{
+
+.error {
+  height: 40px;
+  background-color: $light-brilliant-pink;
+  //margin-top: 20px;
+  
+}
+.err-text {
+  //height: 19px;
+  text-align: center;
+  padding-top: 5px;
+  @include font-line-height(14px, 500, $white, 35px, TheinhardtPan Regular);	
+}
+}

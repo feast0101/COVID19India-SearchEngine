@@ -1,0 +1,37 @@
+$grey94: #F0F0F0;
+$white-smoke: #F1F1F1;
+$vivid-navy: #1f40e6;
+$mckinsey-deep-blue: #051c2c;
+$loader-55: #9BA4AB;
+$loader-100: $mckinsey-deep-blue;
+$grey70: #b3b3b3;
+$grey26: #424242;
+$grey50: #7F7F7F;
+$grey54: #8A8A8A;
+$deep-blue: #041E32;
+
+$header-color: #2f6987;
+$dark-teal: #00747d;
+$grey: #cfcfcf;
+$light-grey: #ebebeb;
+$medium-grey: #e5e5e5;
+$light-black: #333;
+$black: #000;
+$red: #f00;
+$blue: #0065bd;
+$white: #fff;
+$grey60: #999;
+$deep-sky-blue: #00adef;
+$dark-blue: #002960;
+$red: #CD202C;
+$light-brilliant-pink: #F13A2C;
+$light-green: #77bb51;
+$dark-grey: #565656;
+
+@mixin font-line-height($fontsize, $fontweight, $color, $lineheight, $fontfamily) {
+  font-size: $fontsize;
+  font-weight: $fontweight;
+  font-family: $fontfamily;
+  color: $color;
+  line-height: $lineheight;
+}

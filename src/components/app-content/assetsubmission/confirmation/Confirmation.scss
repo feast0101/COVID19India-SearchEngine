@@ -1,0 +1,57 @@
+
+@import "../../../../styles/partials/variables";
+.error-confirm {
+  //height: 40px;
+  //background-color: $light-brilliant-pink;
+
+}
+.err-text-confirm {
+  text-align: center;
+  //padding-top: 5px;
+  @include font-line-height(16px, 500, $light-brilliant-pink, 24px, TheinhardtPan Regular);
+}
+.confirmation-modal{
+  .continue-working {
+    background-color: $white !important;
+    @include font-line-height(14px, 500, $vivid-navy, 19px, TheinhardtPan Medium);
+    border: 1px solid $vivid-navy !important;
+    border-radius: 0;
+    margin-left: 15px;
+    padding: 15px 20px;
+    &:hover, &:focus, &:active:focus,  &:active{
+      background-color: $white !important;
+      border: 1px solid $vivid-navy  !important;
+      box-shadow: none !important;
+      @include font-line-height(14px, 500, $vivid-navy !important, 19px, TheinhardtPan Medium);
+    }
+  }
+  .confirm-submission {
+    background-color: $vivid-navy !important;
+    @include font-line-height(14px, 500, $white, 19px, TheinhardtPan Medium);
+    border-radius: 0;
+    padding: 15px 20px;
+    &:hover, &:focus, &:active:focus,  &:active{
+      background-color: $vivid-navy !important;
+      border: 1px solid $vivid-navy  !important;
+      box-shadow: none !important;
+      @include font-line-height(14px, 500, $white !important, 19px, TheinhardtPan Medium);
+    }
+  }
+  
+  .confirm-msg-confirm {
+    @include font-line-height(14px, 300, $black, 19px, TheinhardtPan Light);
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .header-title-confirm {
+    display: inline-block;
+    width: 94%;
+    @include font-line-height(24px, normal, $black, 33px, TheinhardtPan Medium);	
+  }
+  
+  .close-btn-confirm {
+    display: inline-block;
+    width: 24px;
+    cursor: pointer;
+  }
+}

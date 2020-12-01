@@ -1,0 +1,104 @@
+@import '../../../../styles/partials/variables';
+.libraryHeaderContainer{
+    background-color: $white-smoke;
+.libraryHeader {
+    box-sizing: inherit;
+    max-width: 1280px;
+    margin: 0 auto;
+    .back-to-know-home{
+        @include font-line-height(12px, 300, $vivid-navy, 22px, TheinhardtPan Regular);
+        img{
+            transform: rotate(180deg);
+            margin-right: 8px;
+            height: 9px;
+        }
+    }
+    
+    padding: 24px 24px;
+    .leftSection{
+        width: 76%;
+        display: inline-block;
+    }
+    .rightSection{
+        width: 24%;
+        display: inline-block;
+        align-content: center;
+        vertical-align: top;
+        margin-top: 42px;
+        .want-to-contribute-block{
+            .want-to-contribute{
+                display: block;
+                margin-bottom: 12px;
+                font-family: TheinhardtPan Medium;
+            }
+            padding: 24px;
+            width: 100%;
+            text-align: center;
+            background-color: $white;
+            @include font-line-height(14px, 500, $black, 22px, TheinhardtPan Medium);
+            .create-full-asset{
+                width: 100%;
+                display: block;
+                border: 1px solid $mckinsey-deep-blue;
+                padding: 8px 0px;
+                text-align: center;
+                background-color: $mckinsey-deep-blue;
+                margin-bottom: 8px;
+                span {
+                    vertical-align: middle;
+                    @include font-line-height(14px, 500, $white, 19px, TheinhardtPan Medium);
+                }
+            }
+            .manage-my-asset-list{
+                width: 100%;
+                padding: 8px 0px;
+                display: block;
+                border: 1px solid $mckinsey-deep-blue;
+                
+                span {
+                    vertical-align: middle;
+                    @include font-line-height(14px, 500, $mckinsey-deep-blue, 19px, TheinhardtPan Medium);
+                }
+            }
+        }
+        
+    }
+    .knowAssetLibrary{
+        margin-top: 12px;
+        width: 100%;
+        color: $black;
+        font-family: Bower Bold;
+        font-size: 52px;
+        font-weight: bold;
+        line-height: 52px;
+    }
+    .searchOnKnow{
+        @include font-line-height(16px, normal, $vivid-navy, 19px, TheinhardtPan Regular);
+    }
+	
+	.knowFeedback{
+        @include font-line-height(16px, normal, $vivid-navy, 19px, TheinhardtPan Regular);
+    }
+
+    .welcomeToKnow{
+        width: 100%;
+        @include font-line-height(16px, normal, $grey26, 22px, TheinhardtPan Regular);
+        padding: 23px 0;
+    }
+	.welcomeToKnowFeedback{
+        width: 100%;
+        @include font-line-height(16px, normal, $grey26, 19px, TheinhardtPan Regular);
+        padding: 0 0 23px 0;
+    }
+    p{
+        display: block;
+        @include font-line-height(16px, 500, $black, 22px, TheinhardtPan Medium);
+        margin-bottom : 8px;
+    }
+
+    .filters{
+        width: 88%;
+    }
+    
+}
+}

@@ -1,0 +1,92 @@
+@import "../../../../styles/partials/variables";
+.footer-page{
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  max-width: 1280px;
+  width: 100%;
+  background-color: $white;
+  hr {
+    border-top: 1px solid $medium-grey;
+    margin: 0px 0px 10px 0px;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+.footer {
+   margin: 14px 0px;
+    text-align: right;
+    width: 76%;
+    .rightSubmissionFooterButtons{
+      display:inline-block;
+      width: 90%;
+      text-align: left;
+    }
+  
+    .leftSubmissionFooterButtons{
+      display:inline-block;
+      width: 10%;
+      text-align: right;
+    }
+
+    z-index: 1030;
+    .footer-a {
+      @include font-line-height(14px, 500, $white, 14px, TheinhardtPan Medium);
+      background-color: $vivid-navy;
+      border: 1px solid $vivid-navy;
+      padding: 21px 20px;
+      border-radius: 0px;
+      margin-right: 10px;
+      &:hover, &:focus{
+        background-color: $vivid-navy !important;
+        border: 1px solid $vivid-navy  !important;
+        box-shadow: none  !important;
+      }
+    }
+    .footer-b {
+      @include font-line-height(14px, 500, $vivid-navy, 14px, TheinhardtPan Medium);
+      background-color: $white;
+      border: 1px solid $vivid-navy;
+      padding: 21px 20px;
+      border-radius: 0px;
+      margin-right: 10px;
+      &:hover, &:focus{
+        background-color: $white !important;
+        border: 1px solid $vivid-navy  !important;
+        box-shadow: none !important;
+        color: $vivid-navy !important;
+      }
+    }
+    .footer-c {
+      @include font-line-height(14px, 500, $vivid-navy, 14px, TheinhardtPan Medium);
+      background-color: $white;
+      border: 1px solid $vivid-navy;
+      padding: 21px 18px;
+      border-radius: 0px;
+      margin-right: 10px;
+      &:hover, &:focus{
+        background-color: $white !important;
+        border: 1px solid $vivid-navy  !important;
+        box-shadow: none !important;
+        color: $vivid-navy !important;
+      }
+    }
+
+    .cancel {
+        @include font-line-height(16px, 500, $grey70, 16px, TheinhardtPan Medium);
+        margin-left: 10px;
+        cursor: pointer;
+        &:hover{
+          color: $grey70;
+        }
+      }
+      .delete-draft {
+        @include font-line-height(16px, 500, $light-brilliant-pink, 16px, TheinhardtPan Medium);
+        cursor: pointer;
+        &:hover{
+          @include font-line-height(16px, 500, $light-brilliant-pink, 16px, TheinhardtPan Medium);
+        }
+      }
+  }
+  
+}

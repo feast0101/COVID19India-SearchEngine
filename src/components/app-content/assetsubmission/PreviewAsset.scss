@@ -1,0 +1,630 @@
+@import '../../../styles/partials/variables';
+
+.main-class {
+  margin-top: 84px;
+.reviewAlert {
+	height: 64px;
+	background-color: $vivid-navy;
+		.oval {
+			box-sizing: border-box;
+			height: 23.96px;
+			width: 23.96px;
+			margin-right: 20px;
+			display:inline-block;
+			padding:20px 20px 20px 109px;
+			img{
+				filter: invert(10%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(100%);
+			}
+		}
+		.mainMessage {
+			font-family: "TheinhardtPan Medium";
+			display:inline-block;
+			color: $white;	
+			font-size: 14px;
+			font-weight: 500;
+			
+			
+		}
+		.clickMessage {
+			font-family: "TheinhardtPan Regular";	
+			display:inline-block;	
+			margin-left:16px;
+			color: $white;	
+			font-size: 14px;
+			font-weight: 500;
+			
+			
+		}
+	}
+
+//}
+
+.summaryHeaderContainer {
+	//width: 100%;
+	box-sizing: inherit;
+	//max-width: 1280px;
+  //height: 229px;
+  margin-top: 82px;
+	
+	
+	background-color: $grey94;
+	//box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+	a:hover {
+		color: $vivid-navy !important;
+		text-decoration: underline !important;
+	}
+.summaryHeader {
+	//width: 68%;
+	padding: 0px 24px;
+	margin: 0 auto;
+  max-width: 1280px;
+  min-height: 200px;
+
+	.reviewAlert {
+		height: 64px;
+		width: 1440px;
+		background-color: $vivid-navy;
+	}
+	
+	
+
+	.backTo {
+		@include font-line-height(12px, 300, $vivid-navy,  16px, TheinhardtPan Regular);
+        img{
+           // transform: rotate(180deg);
+            margin-right: 8px;
+            height: 9px;
+		}
+		width: 100%;
+		margin: 20px 0px 10px 0px;
+		display: inline-block;
+		span a{
+			color:$vivid-navy;
+		}
+		span a:hover {
+			color: #1f40e6;			
+		 }
+	}
+		.logoImage {
+			display: inline-block;
+			margin: 20px 10px 0px 0px;
+			width: 10%;
+			img{
+				width: 100%;
+				//height: 80px;
+			}
+		}
+		
+		.assetTitle {
+			@include font-line-height(40px, 500, $deep-blue, 55px, TheinhardtPan Medium);
+			width: 52%;
+			vertical-align: top;
+			display: inline-block;
+      margin-top: 18px;
+			.owningPractice {
+				font-family: TheinhardtPan Medium;
+				font-size: 14px;
+				font-weight: 300;
+				.practiceText {
+					color: $vivid-navy;
+				}
+			}
+			
+		}
+		
+	.header{
+		
+	}
+}
+}
+
+
+
+.summaryBody {
+	padding: 0px 24px;
+	clear: left;
+	margin: 24px auto 0px;
+	max-width: 1280px;
+
+	.rightSection {
+		a:hover {
+			color: $white !important;
+			text-decoration: underline !important;
+		}
+		width: 26%;
+		display: inline-block;
+		//vertical-align: top;
+		position: relative;
+		bottom: 220px;
+		vertical-align: top;
+		
+	.lastUpdated {
+		width: 100%;
+		//height: 15px;
+		text-align: right;
+		display: inline-block;
+		vertical-align: top;
+		//margin-top: 40px;
+		margin-bottom: 8px;
+		margin-top:37px;
+		@include font-line-height(11px, normal, $grey50, 15px, TheinhardtPan Regular);								
+		
+	}
+	.rightPanel {
+		width: 100%;
+		background-color: $mckinsey-deep-blue;
+		display: inline-block;
+		vertical-align: top;
+		padding-bottom: 24px;
+		margin-top:8px;
+	
+		.readyToUseMateria {
+			//height: 17px;
+			margin: 24px 24px 0px;
+			@include font-line-height(18px, 500, $white, 17px, TheinhardtPan Medium);								
+		}
+	
+		.DocumentCategory {
+			//height: 18px;
+			margin: 16px 24px 8px 24px;
+			@include font-line-height(16px, 500, $white, 18px, TheinhardtPan Medium);								
+		}
+		.attachmentDtls {
+			//height: 17px;	
+			margin: 0px 24px;	
+			@include font-line-height(12px, normal, $white-smoke, 17px, TheinhardtPan Light);								
+			
+			.attachmentlnk{
+				color: $white-smoke;
+				font-family: "TheinhardtPan Light";
+				font-size: 12px;
+				
+			}
+		}
+	
+		.divider {
+			box-sizing: border-box;
+			border: 1px solid $white;
+			opacity: 0.2;
+			margin: 24px;
+		}
+	
+		.demoVideo {
+			margin: 16px 24px;
+			@include font-line-height(18px, 500, $white, 17px, TheinhardtPan Medium);								
+			
+		}
+	
+		.videoContent{
+				height: 196px;
+				margin : 24px;
+				img {
+					width: 100%;
+				}
+			
+		}
+		.additionalInfo {
+			 margin-left: 24px;
+			 @include font-line-height(18px, 500, $white, 17px, TheinhardtPan Medium);
+	
+		 }
+	
+		 .emailUsBox {
+			 height: 48px;
+			 width: 85%;
+			 border: 1px solid $white;
+			 background-color: $white;
+			 text-align: center;
+			 margin: 24px 24px 16px;
+			 .groupEmail{
+				 display:inline-block;
+				 img {
+						 //box-sizing: border-box;
+						 //height: 19px;
+						 width: 19.18px;
+						 vertical-align: text-bottom;
+						 //border: 1px solid #051C2C;
+					 }
+			 }
+	
+			 .emailText{
+					 //height: 19px;
+					 //width: 55px;
+					 color: $mckinsey-deep-blue;
+					 font-family: "TheinhardtPan Medium";
+					 font-size: 14px;
+					 font-weight: 500;
+					 line-height: 19px;
+					 display:inline-block;
+					 margin-left:8px;
+			 }
+		 }
+		 .emailUs {
+			 // /height: 19px;
+			 margin-top:14px;
+			 @include font-line-height(12px, 500, $mckinsey-deep-blue, 19px, TheinhardtPan Medium);
+			 vertical-align: middle;
+		 }
+		 .visitWebsiteBox {
+			 height: 48px;
+			 width: 85%;
+			 border: 1px solid $white;
+			 background-color: $mckinsey-deep-blue;
+			 text-align: center;
+			 margin: 24px 24px 0 24px;
+	
+		 }
+		 .visitOurWebsite {
+			 //height: 19px;
+			 margin-top:14px;
+			 @include font-line-height(14px, 500, $white, 19px, TheinhardtPan Medium);
+			 .a{
+				 color: $white;
+			 }
+		 }
+	
+	
+	 }
+	}
+	.leftPanel {
+		a:hover {
+			color: $vivid-navy !important;
+			text-decoration: underline !important;
+		}
+		display: inline-block;
+		width: 72%;
+		margin-right: 16px;
+		.leftPanelFirst {
+			width: 100%;
+			display: inline-block;
+			border-bottom: 1px solid $medium-grey;
+			.leftPanelDesc {
+				width: 70%;
+				margin-right: 15px;
+				display: inline-block;
+				.description {
+					margin-bottom: 16px;
+					@include font-line-height(18px, 500, $black, 21px, TheinhardtPan Medium);								
+				}
+				.descriptionText {
+					width: 100%;
+					letter-spacing: -0.09px;
+					margin-bottom: 24px;
+					@include font-line-height(14px, normal, $light-black, 21px, TheinhardtPan Regular);								
+					& > * {
+						@include font-line-height(14px, normal, $light-black, 21px, TheinhardtPan Regular);								
+					}
+					
+				}
+			}
+			.rightPanelGetHelp {
+				width: 25%;
+				display: inline-block;
+				vertical-align: top;
+				//text-align: center;
+				.getHelpText {
+					margin-bottom: 22px;
+					@include font-line-height(18px, 500, $black, 21px, TheinhardtPan Medium);								
+				}
+				.firstAlertWrapper{
+					margin-bottom: 10px;					
+				.assetLeader {
+					display: block;
+					@include font-line-height(14px, normal, $grey54, 17px, TheinhardtPan Light);								
+				}
+				.firstAlert{
+					display: inline-block;
+					width: 70%;
+					vertical-align: super;
+					margin-left: 10px;
+					
+				}
+				.circular {
+					display: inline-block;
+					margin: auto;
+					width: 44px;
+					height: 44px;
+					border-radius: 50%;
+					overflow: hidden;
+					vertical-align: baseline;
+					img {
+						width: 100%;
+						&:hover{
+								-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
+								filter: alpha(opacity=70); // IE 5-7
+								opacity: 0.7; //modern browsers
+							}
+						}
+					}
+				}
+
+				.firstAlertName {
+					//height: 21px;
+					//margin-left: 10px;
+
+					//width:18%;
+					@include font-line-height(16px, 300, $light-black, 21px, TheinhardtPan Light);								
+           
+          
+				
+			}
+			}
+		}
+		.leftPanelSecond {
+			width: 100%;
+			display: inline-block;
+			border-bottom: 1px solid $medium-grey;
+			.leftPanelUseCases {
+				width: 100%;
+				margin-right: 0px;
+				.commonUseCases {
+					margin-top: 24px;
+					@include font-line-height(18px, 500, $black, 21px, TheinhardtPan Medium);								
+				}
+				.useCaseList {
+					width: 32%;
+					display: inline-block;
+					margin-bottom: 20px;
+					margin-right:10px;
+					
+					vertical-align: top;
+					.useCaseTitle {
+						margin-top: 16px;
+						@include font-line-height(16px, 500, $black, 22px, TheinhardtPan Medium);								
+					}
+					.useCaseDesc > * {
+						@include font-line-height(14px, normal, $light-black, 21px, TheinhardtPan Regular);								
+					}
+				}
+			}
+		}
+		.leftPanelThird {
+			width: 100%;
+			display: inline-block;
+			border-bottom: 1px solid $medium-grey;
+			
+			.internalContactWrapper{
+				margin-bottom: 57px;
+			
+			.internalContactsText {
+				width: 100%;
+				margin-bottom: 15px;
+				margin-top: 23px;
+				@include font-line-height(18px, 500, $black, 21px, TheinhardtPan Medium);								
+			}
+			.internalContactList {
+				width: 25%;
+				display: inline-block;
+				.intenalContactImage {
+					margin-top: 15px;
+					width: 5%;
+				}
+				.internalContactDtls {
+					width: 100%;
+					display: inline-block;
+					.internalContactName {
+						//height: 21px;
+						margin-top: 20px;
+						@include font-line-height(16px, 300, $black, 21px, TheinhardtPan Light);								
+					}
+					.internalContactRole {
+						//height: 19px;
+						width: 138px;
+						@include font-line-height(14px, normal, $grey54, 19px, TheinhardtPan Light);								
+					}
+				}
+			}
+		}
+		}
+		.leftPanelFour {
+			width: 100%;
+			display: inline-block;
+			border-bottom: 1px solid $medium-grey;
+			margin-top: 23px;
+			.engagementHeader{
+					//height: 21px;
+					//margin-bottom: 27px;
+					display:inline-block;
+					@include font-line-height(18px, 500, $black, 21px, TheinhardtPan Medium);								
+			}
+			.engagementCount{
+				//height: 21px;
+				margin-bottom: 27px;
+				display:inline-block;
+				@include font-line-height(18px, 500, $grey50, 21px, TheinhardtPan Medium);				
+			}
+			.past3Years {
+				display:inline-block;
+				margin-left:12px;
+				@include font-line-height(12px, normal, $grey50, 16px, TheinhardtPan Regular);
+			}
+
+			.noLinkedEngagements {
+				height: 19px;
+				text-align: center;
+				margin-top:46px;
+				margin-bottom:8px;
+				@include font-line-height(14px, normal, $black, 19px, TheinhardtPan Regular);
+			}
+			.engagementsContact {
+				height: 19px;
+				text-align: center;
+				margin-bottom:44px;
+				@include font-line-height(14px, normal, $vivid-navy, 19px, TheinhardtPan Regular);
+			}
+			.engagementList{
+				width: 100%;
+				margin-bottom: 21px;
+				.engagamentTitle{
+					width: 80%;
+					display: inline-block;
+					@include font-line-height(14px, normal, $light-black, 19px, TheinhardtPan Regular);
+				}
+				.engagementDuration {
+					text-align: right;
+					width: 20%;
+					display: inline-block;
+					@include font-line-height(14px, normal, $mckinsey-deep-blue, 21px, TheinhardtPan Regular);
+				}
+				.engagementDesc {
+					@include font-line-height(14px, normal, $grey50, 19px, TheinhardtPan Regular);
+				}
+				
+			}
+			.seeMore {
+				height: 21px;
+				text-align: center;
+				margin-bottom: 24px;
+				@include font-line-height(14px, normal, $grey60, 21px, TheinhardtPan Regular);
+			}
+			
+		}
+		.leftPanelFive {
+			width: 100%;
+			display: inline-block;
+			border-bottom: 1px solid $medium-grey;
+			margin-top: 23px;
+			.leftPanelOthers{
+				width: 48%;
+				display: inline-block;
+				margin-bottom: 59px;
+				margin-right: 10px;
+			.deploymentModel {
+				@include font-line-height(18px, 500, $black, 21px, TheinhardtPan Medium);
+			}
+			.timingHeader {
+				margin-top: 24px;
+				@include font-line-height(16px, 500, $black, 22px, TheinhardtPan Medium);
+			}
+			.timingText {
+				margin-top: 4px;
+				@include font-line-height(14px, normal, $light-black, 19px, TheinhardtPan Regular);
+			}
+			.resourcingHeader {
+				margin-top: 16px;
+				@include font-line-height(16px, 500, $black, 22px, TheinhardtPan Medium);
+			}
+			.resourcingText {
+				margin-top: 4px;
+				@include font-line-height(14px, normal, $light-black, 19px, TheinhardtPan Regular);
+			}
+			.costHeader {
+				margin-top: 16px;
+				@include font-line-height(16px, 500, $black, 22px, TheinhardtPan Medium);
+			}
+			.costText {
+				margin-top: 4px;
+				@include font-line-height(14px, normal, $light-black, 19px, TheinhardtPan Regular);
+			}
+		}
+		.rightPanelOther{
+			width: 50%;
+			display: inline-block;
+    		vertical-align: top;
+
+			.technologyInformation {
+				margin-bottom: 24px;
+				@include font-line-height(18px, 500, $black, 21px, TheinhardtPan Medium);
+			}
+			.technologyInfoText {
+				@include font-line-height(14px, normal, $light-black, 19px, TheinhardtPan Regular);
+			}
+			
+		}
+		}
+	}
+
+	.circular {
+		display: inline-block;
+		margin: auto;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		overflow: hidden;
+		vertical-align: middle;
+		img {
+			width: 100%;
+			&:hover{
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
+				filter: alpha(opacity=70); // IE 5-7
+				opacity: 0.7; //modern browsers
+			}
+
+		}
+	}
+	.download {
+		box-sizing: border-box;
+		height: 7.09px;
+		width: 13.17px;
+		border: 1px solid $white;
+	}
+}
+
+.curatorRectangle {
+	height: 177px;
+	background-color: $grey94;
+	box-shadow: 0 2px 40px 0 rgba(0,0,0,0.15);
+
+	.readyToSubmit {
+		height: 33px;
+		padding:40px 0 16px 107px;
+		@include font-line-height(24px, 500,  $black, 33px, TheinhardtPan Medium);
+	}
+	.curatorWrapper{
+		margin-left:107px;
+		display:inline-block;
+		margin-top:16px;
+	.approveRectangle {
+		height: 40px;
+		width: 160px;
+		background-color: $vivid-navy;
+		
+		display:inline-block;
+		margin-right:16px;
+		
+		.approveText{
+			text-align: center;
+			margin-top:15px;
+			@include font-line-height(14px, 500,  $white, 19px, TheinhardtPan Medium);
+			
+		}
+
+	}
+	.curatorEditRectangle {
+		height: 40px;
+		border: 1px solid $vivid-navy;
+		background-color: $grey94;
+		display:inline-block;
+		width: 160px;
+		vertical-align: middle;
+		
+		.curatorEditText {
+			height: 19px;
+			text-align: center;
+			padding: 11px 24px 10px 10px;
+			@include font-line-height(14px, 500,  $vivid-navy, 19px, TheinhardtPan Medium);
+		}
+	}
+
+	.curatorDeleteRectangle {
+		height: 40px;
+		width: 160px;
+		border: 1px solid $light-brilliant-pink;
+		background-color: $grey94;
+		vertical-align: middle;
+		margin-left:550px;
+		display:inline-block;
+		.curatorDeleteText {
+			height: 19px;
+			text-align: right;
+			padding: 11px 28px 11px 11px;
+			@include font-line-height(14px, 500, $light-brilliant-pink, 19px, TheinhardtPan Medium);
+		}
+	}
+}
+
+
+
+}
+}

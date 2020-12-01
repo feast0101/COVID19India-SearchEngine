@@ -1,0 +1,469 @@
+@import '../../../styles/partials/reset';
+@import '../../../styles/partials/variables';
+
+.dashboardLayout{
+  background: #F0F0F0;
+.dashboardHeader {
+  
+ // max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 24px 0 24px;
+  > .banner {
+    margin: 0 auto;
+    position: relative;
+    padding-bottom:32px;
+    background: #F0F0F0;
+    //padding: 30px;
+
+    > .breadcrumb {
+      font-size: 12px;
+      background-color:#F0F0F0;
+      //padding-left:0;
+      //padding-bottom:0;
+      padding: 0;
+      margin-bottom: .75rem;
+      
+      .know-home {
+        color: #305BEF;
+        font-family: "TheinhardtPan Regular";
+        font-size: 12px;
+        line-height: 16px;
+        margin-right:7.5px;
+      }
+
+      .know-asset-library {
+        height: 16px;
+        width: 100px;
+        color: #305BEF;
+        font-family: "TheinhardtPan Regular";
+        font-size: 12px;
+        line-height: 16px;
+      }
+      img {
+        box-sizing: border-box;
+       // height: 9px;
+        width: 5px;
+        // border: 1px solid #B3B3B3;
+        //transform: scaleX(-1);
+        
+      }
+      > a {
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    > .content {
+      display: flex;
+
+      > .suggestion {
+        flex: 0.3;
+        padding-top:35px;
+        .curate{
+          font-size: 14px;
+          margin-top: 50px;
+          color:  #051C2C;
+          font-family: "TheinhardtPan Regular";
+          font-weight: 500;
+        }
+        .practice{
+            font-size: 14px;
+            margin-top: 50px;
+            color: #1F40E6;
+            font-family: "TheinhardtPan Regular";
+            font-weight: 700;
+        }
+        .feedback{
+            font-size: 12px;
+            margin-top: 50px;
+            color: #1F40E6;
+            font-family: "TheinhardtPan Regular";
+            font-weight: 300;
+            &:link{
+              text-decoration: underline;
+              } 
+            &:hover{
+              text-decoration: underline;
+            }  
+        }
+	
+      }
+
+      > .container {
+        flex: 0.7;
+        padding-left:0;
+        
+
+        > .title {
+          color: #000000;
+         	font-family: Bower Bold;
+        	font-size: 52px;
+          font-weight: 700;
+          padding:0;
+        }
+
+        > .asset-links {
+          margin-top: 24px;
+         
+
+           :hover{
+            color:$white;
+            text-decoration: none;
+            } 
+          > .asset-page {
+            display: inline-block;
+            width:30%;
+	          background-color: #051C2C;
+            padding: 15px 50px;
+            font-size: 14px;
+            height:48px;
+            span {
+              vertical-align: middle;
+              @include font-line-height(14px, 500, $white, 19px, TheinhardtPan Medium);
+             }
+          }
+
+          > .asset-add-page {
+            display: inline-block;
+            border: 1px solid #000000;
+            background-color: #F0F0F0;
+            padding: 15px 50px;
+            margin-left: 15px;
+            font-size: 14px;
+            height:48px;
+            span {
+              vertical-align: middle;
+              @include font-line-height(14px, 500, #051C2C, 19px, TheinhardtPan Medium);
+             }
+          }
+        }
+      }
+
+    }
+  }
+}
+  > .content {
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 32px 24px 24px 24px;
+
+    > * {
+      margin: 0 auto;
+      position: relative;
+     // max-width: 1200px;
+    }
+
+    > .assets {
+      > .in-progress {
+         
+        > .title {
+          font-size: 24px;
+          @include font-line-height(24px, 500, #051C2C, 19px, TheinhardtPan Medium);
+
+          > .count {
+            color: #d2d2d2;
+          }
+        }
+
+        > .content {
+          
+
+          > .item, .heading {
+            display: flex;
+            font-size: 14px;
+            border-bottom: 1px solid #d2d2d2;
+            padding-top: 24px;
+            padding-bottom:12px;
+            
+            > * {
+              align-self: center;
+              
+            }
+
+            > .name {
+              flex: 0.3;
+              font-family: TheinhardtPan Medium;
+        	    font-size: 14px;
+              font-weight: 500;
+              
+            }
+            .pedingAssetName{
+              flex: 0.3;
+            }
+
+            > .date, .status {
+              flex: 0.2;
+              font-family: TheinhardtPan Medium;
+        	    font-size: 14px;
+              font-weight: 500;
+            }
+
+            > .submitter {
+              flex: 0.25;
+              font-family: TheinhardtPan Medium;
+        	    font-size: 14px;
+              font-weight: 500;
+            }
+
+            > .action {
+              flex: 0.05;
+              img{
+                
+                box-sizing: border-box;
+                //border: 1px solid #B3B3B3;
+                transform: rotate(90deg);
+                filter: opacity(50%);
+              }
+
+            }
+          }
+
+          > .heading {
+            padding-bottom: 20px;
+            
+           
+          }
+
+          > .item {
+            padding: 8px 0;
+            @include font-line-height(14px, 500, #051C2C, 19px, TheinhardtPan Regular);
+            > .name {
+              font-family: TheinhardtPan Light;
+        	    font-size: 16px;
+              font-weight: 300;
+              color: #1F40E6;
+            }
+
+          > .pedingAssetName{
+              
+              color: #333333;
+              font-family: "TheinhardtPan Light";
+              font-size: 16px;
+              font-weight: 300;
+            }
+            > .date{
+              color: #333333;
+              font-family: TheinhardtPan Light;
+        	    font-size: 14px;
+              font-weight: 300;
+            }
+            > .submitter {
+              display: inline-block;
+              
+
+              > .display-image {
+                
+                &:hover{
+                  > img{
+                   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
+                   filter: alpha(opacity=70); // IE 5-7
+                   opacity: 0.7; //modern browsers
+                 }
+               }
+               display: inline-block;
+               border-radius: 50%;
+               overflow: hidden;
+               text-align: center;
+               width: 44px;
+				       height: 44px;
+               
+              }
+              
+
+              > .name {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 10px;
+                margin-top: 15px;
+                font-family: TheinhardtPan Light;
+                font-size: 14px;
+                font-weight: 300;
+                color: #000000;
+                
+              }
+              > .not-submitted {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 10px;
+                margin-top: 15px;
+                font-style:italic;
+                font-family: TheinhardtPan Light;
+                font-size: 14px;
+                font-weight: 300;
+                color: #000000;
+              }
+            }
+
+            > .status {
+              > p {
+                padding: 10px;
+                width: max-content;
+                font-family: TheinhardtPan Medium;
+        	      font-size: 14px;
+                font-weight: 500;
+                color: #FFFFFF;
+                text-align: center;
+                &.review {
+                  background:#1F40E6;
+                  width:55%;
+                }
+
+                &.draft {
+                  background: #77BB51;
+                  width:25%;
+                }
+
+                &.pending {
+                  background: #E5E5E5;
+                  //width:65%;
+                  color:#B3B3B3;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      > .published {
+        margin-top: 32px;
+        padding-bottom: 32px;
+        > .title {
+          color: #000000;
+          font-family: "TheinhardtPan Medium";
+          font-size: 24px;
+          font-weight: 500;
+        
+
+          > .count {
+            color: #B3B3B3;
+            font-family: "TheinhardtPan Medium";
+            font-size: 24px;
+            font-weight: 500;
+          }
+        }
+
+        > .content {
+          margin-top: 20px;
+
+          > .item, .heading {
+            display: flex;
+            font-size: 14px;
+            border-bottom: 1px solid #d2d2d2;
+
+            > * {
+              align-self: center;
+            }
+
+            > .name {
+              flex: 0.3;
+              font-family: TheinhardtPan Medium;
+        	    font-size: 14px;
+              font-weight: 500;
+            }
+
+            > .first-alert {
+              flex: 0.2;
+              font-family: TheinhardtPan Medium;
+        	    font-size: 14px;
+              font-weight: 500;
+            }
+
+            > .description {
+              flex: 0.45;
+              font-family: TheinhardtPan Medium;
+        	    font-size: 14px;
+              font-weight: 500;
+            }
+
+            > .action {
+              flex: 0.05;
+              img{
+                
+                box-sizing: border-box;
+                filter: opacity(50%);
+                height: 20px;
+              }
+            }
+          }
+
+          > .heading {
+            padding-bottom: 20px;
+            font-weight: bold;
+          }
+
+          > .item {
+            padding: 8px 0;
+
+            > .name {
+              > a {
+                font-size: 16px;
+                color: #1F40E6;
+	              font-family: "TheinhardtPan Light";
+	              font-size: 16px;
+	              font-weight: 300;
+              }
+
+              > .owned-by {
+                margin-top: 5px;
+                color:#b3b3b3;
+                font-family: "TheinhardtPan Light";
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 16px;
+              
+
+                > .owner {
+                  color: #000000;
+                }
+                
+              }
+            }
+            > .description {
+              color: #333333; 
+              font-family: "TheinhardtPan Light";
+              font-size: 14px;
+              line-height: 19px;
+            }
+
+            > .first-alert {
+              display: inline-block;
+
+
+              > .display-image {
+
+                &:hover{
+                   > img{
+                    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; //IE8
+                    filter: alpha(opacity=70); // IE 5-7
+                    opacity: 0.7; //modern browsers
+                  }
+                }
+                display: inline-block;
+                border-radius: 50%;
+                overflow: hidden;
+                text-align: center;
+                width: 44px;
+					      height: 44px;
+                
+              }
+             
+              > .name {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 10px;
+                margin-top: 15px;
+                color: #000000;
+                font-family: "TheinhardtPan Light";
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 19px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

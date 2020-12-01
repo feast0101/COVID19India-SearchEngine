@@ -1,0 +1,40 @@
+@import "../../../../styles/partials/variables";
+.previewFooter{
+    height: 84px;
+    margin: 0 auto;
+    vertical-align: middle;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: $white;
+    text-align: center;
+.preview-close {
+  margin-top: 10px;
+  background-color: $vivid-navy !important;
+    @include font-line-height(14px, 500, $white, 19px, TheinhardtPan Medium);
+    border-radius: 0;
+    padding: 20px 34px;
+    &:hover, &:focus, &:active:focus,  &:active{
+      background-color: $vivid-navy !important;
+      border: 1px solid $vivid-navy  !important;
+      box-shadow: none !important;
+      @include font-line-height(14px, 500, $white !important, 19px, TheinhardtPan Medium);
+    }
+}
+.preview-savedraft {
+  margin-top: 10px;
+  background-color: $white !important;
+    @include font-line-height(14px, 500, $vivid-navy, 19px, TheinhardtPan Medium);
+    border: 1px solid $vivid-navy !important;
+    border-radius: 0;
+    margin-left: 15px;
+    padding: 20px 34px;
+    &:hover, &:focus, &:active:focus,  &:active{
+      background-color: $white !important;
+      border: 1px solid $vivid-navy  !important;
+      box-shadow: none !important;
+      @include font-line-height(14px, 500, $vivid-navy !important, 19px, TheinhardtPan Medium);
+    }
+}
+}

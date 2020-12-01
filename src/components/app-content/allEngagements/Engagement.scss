@@ -1,0 +1,102 @@
+@import '../../../styles/partials/reset';
+@import '../../../styles/partials/variables';
+
+.allEngagements {
+    width: 80%;
+    display: inline-block;
+    border-bottom: 1px solid #E5E5E5;
+    margin-top: 23px;
+    margin-left:150px;
+    a:hover {
+		color: $vivid-navy !important;
+		text-decoration: underline !important;
+	}
+    .allEngagementHeader{
+            height: 21px;
+            font-family: "TheinhardtPan Medium";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+            margin-bottom: 27px;
+            display:inline-block;				
+    }
+    .allEngagementCount{
+        height: 21px;
+        color: #7F7F7F;
+        font-family: "TheinhardtPan Medium";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        margin-bottom: 27px;
+        display:inline-block;				
+    }
+    .past3Years {
+        height: 16px;
+        width: 81px;
+        color: #7F7F7F;
+        font-family: "TheinhardtPan Regular";
+        font-size: 12px;
+        line-height: 16px;
+        display:inline-block;
+        margin-left:12px;
+    }
+
+    .noLinkedallEngagements {
+        height: 19px;
+        color: #000000;
+        font-family: "TheinhardtPan Regular";
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        margin-top:46px;
+        margin-bottom:8px;
+    }
+    .allEngagementsContact {
+        height: 19px;
+        color: #1F40E6;
+        font-family: "TheinhardtPan Regular";
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        margin-bottom:44px;
+    }
+    .allEngagementList{
+        width: 100%;
+        margin-bottom: 21px;
+        .allEngagementTitle{
+            height: 19px;
+            color: #333333;
+            font-family: "TheinhardtPan Regular";
+            font-size: 14px;
+            line-height: 19px;
+            width: 70%;
+            display: inline-block;
+           
+            .allEngTitleTxt{
+                color: #333333;
+                font-family: "TheinhardtPan Regular";
+                font-size: 14px;
+            }
+        }
+        .allEngagementDuration {
+            height: 21px;
+            color: #051C2C;
+            font-family: "TheinhardtPan Regular";
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            width: 30%;
+            display: inline-block;
+        }
+        .allEngagementDesc {
+            height: 19px;
+            color: #7F7F7F;
+            font-family: "TheinhardtPan Regular";
+            font-size: 14px;
+            line-height: 19px;
+        }
+        
+    }
+    
+    
+}

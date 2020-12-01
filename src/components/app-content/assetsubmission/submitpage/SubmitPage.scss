@@ -1,0 +1,82 @@
+.submitpage{
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:220px;
+
+
+.thank-you {
+  height: 42px;
+  width: 166px;
+  color: #000000;
+  font-family: TheinhardtPan regular;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-left: 194px;
+  margin-right: 194px;
+  margin-top: 10px;
+}
+
+.thank-metadata {
+  height: 66px;
+  width: 554px;
+  color: #393939;
+  font-family: TheinhardtPan light;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 500;
+}
+.thank-question {
+  height: 20px;
+  font-family: TheinhardtPan light;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-weight: lighter !important;
+}
+.meta-data {
+  height: 22px;
+  color: #393939;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: TheinhardtPan regular;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+}
+
+.submit-content {
+  height: 588px;
+  width: 554px;
+  background-color: white;
+  color: black;
+  margin-top: 141px;
+  margin-bottom: "121px";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-confirm {
+  height: 56px;
+  width: 234px;
+  border: 1px solid #1f40e6;
+  background-color: #1f40e6;
+  font-family: TheinhardtPan light;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  margin-left: 160px;
+}
+}
+}

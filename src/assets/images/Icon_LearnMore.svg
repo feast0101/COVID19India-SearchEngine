@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="15px" viewBox="0 0 24 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon_LearnMore</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Workspace_Search-(+UIG-Proto)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Know-Search_Assets-Results_Hover-on-Large-Asset" transform="translate(-1185.000000, -511.000000)" stroke="#000000">
+            <g id="Icon_LearnMore" transform="translate(1185.000000, 511.000000)">
+                <path d="M23.1133,4.5 L12.5003,4.5 C10.2913,4.5 8.5003,6.292 8.5003,8.5 L8.5003,10.5" id="Stroke-949"></path>
+                <polyline id="Stroke-950" points="19.1133 8.5 23.1133 4.5 19.1133 0.5"></polyline>
+                <polyline id="Stroke-951" points="14.5 8 14.5 14.5 0.5 14.5 0.5 0.5 14.5 0.5 14.5 2"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

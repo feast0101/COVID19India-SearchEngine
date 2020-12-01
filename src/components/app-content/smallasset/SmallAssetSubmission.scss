@@ -1,0 +1,357 @@
+@import '../../../styles/partials/variables';
+
+
+
+
+.small-asset-modal{
+
+    max-width:1000px;
+
+    .modal-content {
+        border-radius: 0;
+        margin: 0 auto;
+        padding: 0px;
+        width: 100%;
+        position: absolute;
+
+    }
+}
+
+
+.div-rectangle {
+
+  background-color: #FFFFFF;
+  padding:32px;
+
+
+
+.heading {
+	margin-bottom:16px;
+	color: #000000;
+	font-family: TheinhardtPan Medium;
+	font-size: 24px;
+	line-height: 33px;
+}
+
+.paragraph {
+   /* height: 19px;
+     width: 980px; */
+	color: #000000;
+	font-family: TheinhardtPan Light;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 19px;
+}
+
+.line-3 {
+	box-sizing: border-box;
+	height: 1px;
+
+	border: 1px solid #E5E5E5;
+
+	 &:not(:only-child) {
+                  margin-top:24px;
+                }
+}
+ 
+
+.field-name {
+    //height: 19px;
+    width: 50%;
+    @include font-line-height(14px, 800, $black, 19px, TheinhardtPan Light);
+   margin-bottom: 6px;
+
+
+    &:not(:only-child) {
+              margin-top:16px;
+            }
+}
+.field-name-search {
+@include font-line-height(14px, 800, $black, 19px, TheinhardtPan Light);
+     margin-bottom: 6px;
+     margin-top: 16px;
+
+}
+
+  .list-validation {
+    @include font-line-height(14px, normal, $grey70, 19px, TheinhardtPan Light);
+    float: right;
+  }
+
+.submissionInput {
+    padding: 10px 18px;
+    height: initial;
+    border: 1px solid $grey70;
+    color: $black;
+    @include font-line-height(14px, normal, $black, 19px, TheinhardtPan Light);
+    border-radius:0px;
+
+    &:focus{
+      border: 1px solid $black;
+      color: $black;
+      box-shadow: none;
+    }
+  }
+  .close-btn-confirm {
+    display: inline-block;
+    width: 24px;
+    cursor: pointer;
+  }
+.invalid-feedback{
+     @include font-line-height(14px, normal, $light-brilliant-pink, 19px, TheinhardtPan Medium);
+     text-align: right;
+     width: auto;
+     margin-top: 6px;
+
+  }
+
+    .was-validated .form-control:valid, .form-control.is-valid {
+      border-color: $grey70;
+      padding: 10px 18px;
+      background: none;
+      &:focus{
+        border: 1px solid $black;
+        color: $black;
+        box-shadow: none;
+      }
+  }
+
+label.required:after {
+	content: "*"; 
+	color: red;
+	font-weight: bold;
+	position: relative;
+	margin-bottom: 0px;
+	font-family: "TheinhardtPan Light";
+}
+
+  .asterisks {
+    color: $light-brilliant-pink;
+  }
+
+
+
+/* .field-box {
+	height: 40px;
+	width: 460px;
+	border: 1px solid #B3B3B3;
+	background-color: #FFFFFF;
+	text-indent: 10px;
+	font-family: "TheinhardtPan Light" !important;
+
+
+} */
+
+.meta-data-group{
+	color: #000000;
+	font-family: "TheinhardtPan Regular";
+	font-size: 14px;
+	line-height: 14px;
+	display: inline-block;
+	margin-left:13px;
+
+}
+
+.field-box {
+    width: 50%;
+    display: inline-block;
+    /*border: 1px solid #B3B3B3;
+    background-color: #fff;
+    text-indent: 10px;
+    font-family: "TheinhardtPan Regular";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    padding:13px 0px 18px;*/
+
+    padding: 10px 18px;
+
+        height: initial;
+        border: 1px solid $grey70;
+        color: $black;
+        @include font-line-height(14px, normal, $black, 19px, TheinhardtPan Light);
+        border-radius:0px;
+
+        &:focus{
+          border: 1px solid $black;
+          color: $black;
+          box-shadow: none;
+        }
+
+}
+
+.react-autosuggest__input::placeholder{
+	height: 14px;
+	width: 142px;
+	color: #B3B3B3;
+	/* font-family: "Theinhardt Pan"; */
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 14px;
+	text-indent: 10px;
+
+}
+
+/*.field-box::placeholder {
+	color: red;
+	font-family: "TheinhardtPan Light";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 19px;
+}*/
+.one_line .filed-box {
+   /*float: left;*/
+    width: 43%;
+
+}
+.one_line .paragraph {
+
+    position: relative;
+    top: 0px;
+}
+.o-2 {
+	position: relative;
+	height: 19px;
+	width: 24px;
+	color: #B3B3B3;
+	 font-family: TheinhardtPan Light;
+	font-size: 14px;
+  line-height: 19px;
+  
+}
+
+.o-1 {
+    left: 30% !important;
+}
+
+.field-box-1{
+
+    width: 100%;
+    resize: none;
+	border: 1px solid #B3B3B3;
+	border-radius:0px;
+	background-color: #FFFFFF;
+	text-indent: 10px;
+	font-family: "TheinhardtPan regular" ;
+		font-size: 14px;	font-weight: 300;	line-height: 19px;
+
+}
+
+.field-box-1::placeholder {
+	color: #B3B3B3;
+	font-family: "TheinhardtPan Light";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 19px;
+
+}
+
+.add-assest-button {
+	height: 48px;
+	width: 137px;
+    background-color: #1F40E6;
+    color:white;
+
+  	font-family: "TheinhardtPan medium";
+  	font-size: 14px;
+  	font-weight: 500;
+  	line-height: 19px;
+}
+
+.cancel-button {
+  height: 48px;
+	width: 137px;
+    border: 1px solid #1F40E6;
+  background-color: #FFFFFF;
+  color:#1F40E6;
+  margin-left: 10px;
+  font-family: "TheinhardtPan medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.delete-button{
+
+  height: 48px;
+	width: 137px;
+    border: 1px solid red;
+  background-color: #FFFFFF;
+  color:red;
+  margin-left: 10px;
+  font-family: "TheinhardtPan medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+
+}
+
+  .autosuggest-para {
+    opacity: 1;
+    background-color: $white;
+    font-family: TheinhardtPan Light;
+    font-size: 14px;
+    max-width: 460px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.24);
+    border-top: 4px solid $white;
+    padding: 10px;
+    cursor: pointer;
+    p{
+      margin: 10px;
+      @include font-line-height(14px, normal, $black, normal, TheinhardtPan Light);
+    }
+  }
+
+  .autosuggest-selected-items {
+        > .selected-item {
+          width: max-content;
+          display: flex;
+          border-radius: 3px;
+          padding: 8px 12px 8px 16px;;
+          background-color: $medium-grey;
+          margin-top: 8px;
+          margin-left
+
+          &:not(:only-child) {
+            margin-left: 15px;
+          }
+
+          > .image {
+            border-radius: 16px;
+          }
+          .circular{
+            display: inline-block;
+            margin: auto;
+            width: 36px;
+            height: 24px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            overflow:hidden;
+
+            vertical-align: middle;
+            img{
+                width:100%;
+
+            }
+          }
+          > .name {
+            @include font-line-height(14px, 300, $black, 14px, TheinhardtPan Regular);
+            display: inline-block;
+            padding-top: 7px;
+            width: 90%;
+            margin-left: 8px;
+            font-weight: 300;
+            //align-self: center;
+          }
+
+          > .close {
+            border-radius: 6px;
+            margin-left: 8px;
+            padding-top: 1px;
+            height: 24px;
+            opacity: 0.75;
+          }
+        }
+    }
+    }

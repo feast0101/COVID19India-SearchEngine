@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Bower Bold';
+    src: url('./../assets/fonts/bower_bold/Bower-Bold.eot'); /* IE9 Compat Modes */
+    src: url('./../assets/fonts/bower_bold/Bower-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./../assets/fonts/bower_bold/Bower-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./../assets/fonts/bower_bold/Bower-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('./../assets/fonts/bower_bold/Bower-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./../assets/fonts/bower_bold/Bower-Bold.otf') format('opentype'),
+        url('./../assets/fonts/bower_bold/Bower-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'TheinhardtPan Regular';
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_regular/TheinhardtPan-Regular.eot');
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_regular/TheinhardtPan-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_regular/TheinhardtPan-Regular.woff2') format('woff2'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_regular/TheinhardtPan-Regular.woff') format('woff'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_regular/TheinhardtPanTT-Regular.ttf') format('truetype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_regular/TheinhardtPan-Regular.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'TheinhardtPan Italic';
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_italic/TheinhardtPan-Italic.eot');
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_italic/TheinhardtPan-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_italic/TheinhardtPan-Italic.woff2') format('woff2'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_italic/TheinhardtPan-Italic.woff') format('woff'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_italic/TheinhardtPanTT-Italic.ttf') format('truetype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_italic/TheinhardtPan-Italic.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'TheinhardtPan Light';
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light/TheinhardtPan-Light.eot');
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light/TheinhardtPan-Light.eot?#iefix') format('embedded-opentype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light/TheinhardtPan-Light.woff2') format('woff2'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light/TheinhardtPan-Light.woff') format('woff'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light/TheinhardtPanTT-Light.ttf') format('truetype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light/TheinhardtPan-Light.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'TheinhardtPan Light Italic';
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light_italic/TheinhardtPan-LightItalic.eot');
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light_italic/TheinhardtPan-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light_italic/TheinhardtPan-LightItalic.woff2') format('woff2'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light_italic/TheinhardtPan-LightItalic.woff') format('woff'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light_italic/TheinhardtPanTT-LightItalic.ttf') format('truetype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_light_italic/TheinhardtPan-LightItalic.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'TheinhardtPan Medium';
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium/TheinhardtPan-Medium.eot');
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium/TheinhardtPan-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium/TheinhardtPan-Medium.woff2') format('woff2'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium/TheinhardtPan-Medium.woff') format('woff'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium/TheinhardtPanTT-Medium.ttf') format('truetype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium/TheinhardtPan-Medium.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'TheinhardtPan Medium Italic';
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium_italic/TheinhardtPan-MediumItalic.eot');
+    src: url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium_italic/TheinhardtPan-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium_italic/TheinhardtPan-MediumItalic.woff2') format('woff2'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium_italic/TheinhardtPan-MediumItalic.woff') format('woff'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium_italic/TheinhardtPanTT-MediumItalic.ttf') format('truetype'),
+        url('./../assets/fonts/theinhardt_pan/theinhardt_pan_medium_italic/TheinhardtPan-MediumItalic.otf') format('opentype')
+}

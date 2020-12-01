@@ -1,0 +1,120 @@
+@import "../../../../styles/partials/variables";
+.img-upload-container {
+  input {
+    display: none;
+  }
+
+  .upload-suggestion {
+    @include font-line-height(14px, 300, $black, initial, TheinhardtPan Light);
+    display: inline-block;
+    padding: 0 24px;
+    vertical-align: top;
+    position: relative;
+    top: 24px;
+
+
+    ul{
+      margin: 0px;
+      padding: 0px 0px 0px 26px;
+    }
+    ul li {
+      @include font-line-height(14px, 300, $black, initial, TheinhardtPan Light);
+      /*list-style: disc;*/
+      //margin: 8px 24px;
+      margin-top: 6px;
+    }
+  }
+
+  .upload-error {
+    margin-left: -60px;
+  }
+
+  .uploader {
+    display: inline-block;
+
+    label {
+      align-items: center;
+      //background-color: white;
+      cursor: pointer;
+      display: flex;
+      height: 140px;
+      justify-content: center;
+      outline: 1px dashed grey;
+      position: relative;
+      width: 140px;
+      @include font-line-height(18px, 500, $black, 25px, TheinhardtPan Medium);
+    }
+  }
+
+  .loaded {
+    height: 135px;
+    width: 140px;
+  }
+
+  .upload-an-image {
+    height: 63px;
+    width: 83px;
+    color: #b3b3b3;
+    font-family: TheinhardtPan light;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .img-description {
+    background: grey;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width: 240px;
+    font-family: TheinhardtPan light;
+  }
+
+  .file-name {
+    color: black;
+    font-size: 14px;
+    margin-left: 12px;
+
+    div {
+      display: inline-block;
+      max-width: 190px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: bottom;
+      white-space: nowrap;
+    }
+  }
+
+  .file-size {
+    color: grey60;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 4px;
+  }
+
+  .img-icon-delete-logo {
+    align-items: center !important;
+    background: white !important;
+    border: transparent !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: flex !important;
+    height: 32px !important;
+    position: absolute !important;
+    right: 15px !important;
+    top: 15px !important;
+    width: 32px !important;
+    z-index: 999 !important;
+     padding: 1px 7px 2px;
+  }
+
+  .news-delete {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .error {
+    font-size: 13px;
+    margin-top: 8px;
+    color:red;
+  }
+}

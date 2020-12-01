@@ -1,0 +1,154 @@
+@import "../../../../styles/partials/variables";
+
+.modal-content{
+  border-radius: 0;
+  width: 68%;
+  margin: 0 auto;
+  padding: 26px;
+}
+.deleteconfirmation-page{
+  //padding: 10px;
+
+ 
+  
+
+  .reviewCheck {
+      display: none;	
+  }
+  .reviewCheck:not(:checked)+span:after {	
+        border: 1px solid $black;	
+        background-color: $white;	
+        width: 24px;	
+        height: 24px;	
+        display: inline-block;	
+        z-index: 0;	
+        top: 0px;	
+  }	
+  .reviewCheck+span {	
+      @include font-line-height(16px,normal,$light-black,21px, TheinhardtPan Light);	
+      position: relative;	
+      padding-left: 38px;	
+      -webkit-user-select: none;	
+      -moz-user-select: none;	
+      -ms-user-select: none;	
+      user-select: none;	
+      display: inline-block;	
+  }	
+  .reviewCheck:checked+span:before {	
+    top: 0;
+    left: 4px;
+    width: 5px;
+    height: 14px;
+    border-top: 0px solid $vivid-navy;
+    border-left: 0px solid transparent;
+    border-right: 0.5px solid #fff;
+    border-bottom: 0.5px solid #fff;
+    transform: rotateZ(38deg) scale(1.1) translateX(4px) translateY(1px);
+    transform-origin: 41% 85%;
+
+    
+  }	
+    
+  .reviewCheck+span:before, .reviewCheck+span:after {	
+      content: '';	
+      left: 0;	
+      position: absolute;	
+      z-index: 1;	
+  }	
+    
+  .reviewCheck:checked+span:after {	
+      top: 0;	
+      width: 24px;	
+      height: 24px;	
+      background-color: $vivid-navy;	
+      z-index: 0;	
+  }	
+  .topic-review-check{	
+      margin-bottom: 23px;
+  }
+.title-metadata-delete {
+  @include font-line-height(14px, 300, $black, 19px, TheinhardtPan Light);
+  margin: 14px 0px 10px;
+}
+.delete-confirm:disabled {
+  background-color: $light-brilliant-pink !important;
+  padding: 15px 20px;
+  border: 1px solid $light-brilliant-pink;
+  border-radius: 0;
+  @include font-line-height(14px, 500, $white, 19px, TheinhardtPan Medium);
+}
+.delete-confirm {
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: $light-brilliant-pink;
+  border: 1px solid $light-brilliant-pink;
+  @include font-line-height(14px, 500, $white, 19px, TheinhardtPan Medium);
+  &:hover, &:focus, &:active:focus,  &:active{
+    background-color:  $light-brilliant-pink !important;
+    border: 1px solid $light-brilliant-pink;
+    box-shadow: none !important;
+    @include font-line-height(14px, 500, $white !important, 19px, TheinhardtPan Medium);
+  }
+}
+.delete-cancel {
+  margin-left: 15px;
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: $white;
+  border: 1px solid $black;
+  @include font-line-height(14px, 500, $black, 19px, TheinhardtPan Medium);
+  &:hover, &:focus, &:active:focus,  &:active{
+    background-color: $white !important;
+    box-shadow: none !important;
+    border: 1px solid $black !important;
+    box-shadow: none !important; 
+    @include font-line-height(14px, 500, $black !important, 19px, TheinhardtPan Medium);
+  }
+}
+.confirm-msg-delete {
+  @include font-line-height(14px, 500, $black, 18px, TheinhardtPan Light);
+  margin-top: 5px;
+  display: inline-block;
+}
+.please-confirm-msg-delete {
+  @include font-line-height(14px, 500, $black, 33px, TheinhardtPan Medium);
+}
+.header-title-delete {
+  width: 94%;
+  display: inline-block;
+  vertical-align: text-top;
+  @include font-line-height(24px, 500, $black, 33px, TheinhardtPan Medium);
+}
+
+
+
+.close-btn-delete {
+  //margin-top: 30px;
+  //margin-left: 180px;
+  display: inline-block;
+  width: 24px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  margin-left: 30px;
+  padding: 0;
+}
+
+
+.error-delete {
+
+}
+.err-text-delete {
+  text-align: center;
+  @include font-line-height(16px, 500, $light-brilliant-pink, 24px, TheinhardtPan Regular);
+}
+
+}
+
+.delete-modal {
+  //width: 750px;
+}
+
+
