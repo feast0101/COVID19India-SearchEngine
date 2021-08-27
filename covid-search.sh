@@ -19,7 +19,7 @@ else
   echo "Creating $CORE"
   /opt/solr/bin/solr create -c "$CORE"
   echo "Created $CORE"
-  curl -s https://api.covid19india.org/raw_data32.json | jq -r '[.raw_data[] | {entryid : .entryid, patientnumber : .patientnumber, detecteddistrict : .detecteddistrict, detectedstate : .detectedstate, numcases : .numcases, source1 : .source1, statecode : .statecode, dateannounced : .dateannounced, currentstatus : .currentstatus, notes : .notes} ]'  >> raw_data32.json
+  curl -s https://data.covid19india.org/raw_data32.json | jq -r '[.raw_data[] | {entryid : .entryid, patientnumber : .patientnumber, detecteddistrict : .detecteddistrict, detectedstate : .detectedstate, numcases : .numcases, source1 : .source1, statecode : .statecode, dateannounced : .dateannounced, currentstatus : .currentstatus, notes : .notes} ]'  >> raw_data32.json
   echo "Loading covid-19 data"
   /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data1.json
   /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data2.json
@@ -53,6 +53,7 @@ else
   /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data30.json
   /opt/solr/bin/post -c $CORE -commit no /covid_data/raw_data31.json
   /opt/solr/bin/post -c $CORE -commit yes /covid_data/raw_data32.json
+  #/opt/solr/bin/post -c $CORE -commit yes /covid_data/raw_data33.json
 
   echo "Loaded covid-19 data"
   stop-local-solr

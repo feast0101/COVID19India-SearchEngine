@@ -1,6 +1,6 @@
 # COVID 19 India data search engine
 
-An implementation of Apache Solr based search engine API indexing daily covid-19  related data of all Indian states/UT. It bootstraps latest collection of data from https://api.covid19india.org/ endpoints
+An implementation of Apache Solr based search engine API indexing daily covid-19  related data of all Indian states/UT. It bootstraps latest collection of data from https://data.covid19india.org/ endpoints
 
 Commands to run:
 
